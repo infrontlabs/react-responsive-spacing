@@ -1,0 +1,12 @@
+{
+  "name": "react-responsive-spacing",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "git@github.com:infrontlabs/react-responsive-spacing.git",
+  "author": "Colyn <colyn.brown@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "styled-components": "^4.3.2"
+  }
+}

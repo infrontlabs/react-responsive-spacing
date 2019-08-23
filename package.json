@@ -1,12 +1,24 @@
 {
-  "name": "react-responsive-spacing",
+  "name": "@infrontlabs/react-spacing",
   "version": "0.0.1",
+  "description": "Shorthand responsive margin and padding utility component to modify an element’s appearance.",
   "main": "index.js",
-  "repository": "git@github.com:infrontlabs/react-responsive-spacing.git",
-  "author": "Colyn <colyn.brown@gmail.com>",
-  "license": "MIT",
   "dependencies": {
     "classnames": "^2.2.6",
     "styled-components": "^4.3.2"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/infrontlabs/react-spacing.git"
+  },
+  "author": "Colyn Brown <colyn@infrontlabs.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/infrontlabs/react-spacing/issues"
+  },
+  "homepage": "https://github.com/infrontlabs/react-spacing#readme"
 }

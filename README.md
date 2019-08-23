@@ -1,4 +1,4 @@
-# react-responsive-spacing
+# react-spacing
 
 Shorthand responsive margin and padding utility component to modify an element’s appearance.
 

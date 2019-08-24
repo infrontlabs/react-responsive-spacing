@@ -1,5 +1,8 @@
 # react-spacing
 
+[![NPM](https://img.shields.io/npm/v/@infrontlabs/react-spacing.svg)](https://www.npmjs.com/package/@infrontlabs/react-spacing)
+
+
 Shorthand responsive margin and padding utility component to modify an element’s appearance.
 
 ```

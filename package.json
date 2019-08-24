@@ -1,6 +1,6 @@
 {
   "name": "@infrontlabs/react-spacing",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Shorthand responsive margin and padding utility component to modify an element’s appearance.",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -9,6 +9,9 @@
     "classnames": "^2.2.6",
     "react": "^16.9.0",
     "styled-components": "^4.3.2"
+  },
+  "peerDependencies": {
+    "react": "^16.9.0"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",

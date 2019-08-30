@@ -136,7 +136,7 @@ var Styles = styled.div(_templateObject(), classes.join('\n'));
 var Spacing = function Spacing(props) {
   var _cx;
 
-  var classNames = cx((_cx = {}, _defineProperty(_cx, "p-".concat(props.p), props.p !== null ? true : false), _defineProperty(_cx, "m-".concat(props.m), props.m !== null ? true : false), _defineProperty(_cx, "pt-".concat(props.pt), props.pt !== null ? true : false), _defineProperty(_cx, "pr-".concat(props.pr), props.pr !== null ? true : false), _defineProperty(_cx, "pb-".concat(props.pb), props.pb !== null ? true : false), _defineProperty(_cx, "pl-".concat(props.pl), props.pl !== null ? true : false), _defineProperty(_cx, "mt-".concat(props.mt), props.mt !== null ? true : false), _defineProperty(_cx, "mr-".concat(props.mr), props.mr !== null ? true : false), _defineProperty(_cx, "mb-".concat(props.mb), props.mb !== null ? true : false), _defineProperty(_cx, "ml-".concat(props.ml), props.ml !== null ? true : false), _cx));
+  var classNames = cx((_cx = {}, _defineProperty(_cx, "p-".concat(props.p), !!props.p), _defineProperty(_cx, "m-".concat(props.m), !!props.m), _defineProperty(_cx, "pt-".concat(props.pt), !!props.pt), _defineProperty(_cx, "pr-".concat(props.pr), !!props.pr), _defineProperty(_cx, "pb-".concat(props.pb), !!props.pb), _defineProperty(_cx, "pl-".concat(props.pl), !!props.pl), _defineProperty(_cx, "mt-".concat(props.mt), !!props.mt), _defineProperty(_cx, "mr-".concat(props.mr), !!props.mr), _defineProperty(_cx, "mb-".concat(props.mb), !!props.mb), _defineProperty(_cx, "ml-".concat(props.ml), !!props.ml), _cx));
   return React.createElement(Styles, _extends({}, props, {
     className: classNames
   }));
@@ -149,7 +149,6 @@ var withSpacing = function withSpacing(Component) {
     }, props));
   };
 };
-
 Spacing.defaultProps = {
   p: null,
   m: null,

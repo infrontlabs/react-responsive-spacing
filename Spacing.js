@@ -98,25 +98,23 @@ const Styles = styled.div`
 
 const Spacing = props => {
   const classNames = cx({
-    [`p-${props.p}`]: props.p !== null ? true : false,
-    [`m-${props.m}`]: props.m !== null ? true : false,
-    [`pt-${props.pt}`]: props.pt !== null ? true : false,
-    [`pr-${props.pr}`]: props.pr !== null ? true : false,
-    [`pb-${props.pb}`]: props.pb !== null ? true : false,
-    [`pl-${props.pl}`]: props.pl !== null ? true : false,
-    [`mt-${props.mt}`]: props.mt !== null ? true : false,
-    [`mr-${props.mr}`]: props.mr !== null ? true : false,
-    [`mb-${props.mb}`]: props.mb !== null ? true : false,
-    [`ml-${props.ml}`]: props.ml !== null ? true : false
+    [`p-${props.p}`]: !!props.p,
+    [`m-${props.m}`]: !!props.m,
+    [`pt-${props.pt}`]: !!props.pt,
+    [`pr-${props.pr}`]: !!props.pr,
+    [`pb-${props.pb}`]: !!props.pb,
+    [`pl-${props.pl}`]: !!props.pl,
+    [`mt-${props.mt}`]: !!props.mt,
+    [`mr-${props.mr}`]: !!props.mr,
+    [`mb-${props.mb}`]: !!props.mb,
+    [`ml-${props.ml}`]: !!props.ml
   })
   return <Styles {...props} className={classNames} />
 }
 
-const withSpacing = Component => {
-  return props => {
-    return <Spacing as={Component} {...props} />
-  }
-}
+export const withSpacing = Component => props => (
+  <Spacing as={Component} {...props} />
+)
 
 Spacing.defaultProps = {
   p: null,
@@ -130,5 +128,4 @@ Spacing.defaultProps = {
   mb: null,
   ml: null
 }
-export { withSpacing }
 export default Spacing

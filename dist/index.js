@@ -1,8 +1,8 @@
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('react'), require('styled-components'), require('classnames')) :
-  typeof define === 'function' && define.amd ? define(['react', 'styled-components', 'classnames'], factory) :
-  (global = global || self, global.Example = factory(global.React, global.styled, global.cx));
-}(this, function (React, styled, cx) { 'use strict';
+  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('react'), require('styled-components'), require('classnames')) :
+  typeof define === 'function' && define.amd ? define(['exports', 'react', 'styled-components', 'classnames'], factory) :
+  (global = global || self, factory(global.Example = {}, global.React, global.styled, global.cx));
+}(this, function (exports, React, styled, cx) { 'use strict';
 
   React = React && React.hasOwnProperty('default') ? React['default'] : React;
   styled = styled && styled.hasOwnProperty('default') ? styled['default'] : styled;
@@ -142,6 +142,14 @@
     }));
   };
 
+  var withSpacing = function withSpacing(Component) {
+    return function (props) {
+      return React.createElement(Spacing, _extends({
+        as: Component
+      }, props));
+    };
+  };
+
   Spacing.defaultProps = {
     p: null,
     m: null,
@@ -155,6 +163,9 @@
     ml: null
   };
 
-  return Spacing;
+  exports.default = Spacing;
+  exports.withSpacing = withSpacing;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
 
 }));

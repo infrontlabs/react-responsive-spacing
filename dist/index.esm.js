@@ -136,6 +136,14 @@ var Spacing = function Spacing(props) {
   }));
 };
 
+var withSpacing = function withSpacing(Component) {
+  return function (props) {
+    return React.createElement(Spacing, _extends({
+      as: Component
+    }, props));
+  };
+};
+
 Spacing.defaultProps = {
   p: null,
   m: null,
@@ -150,3 +158,4 @@ Spacing.defaultProps = {
 };
 
 export default Spacing;
+export { withSpacing };

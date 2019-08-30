@@ -3,7 +3,7 @@
 [![NPM](https://img.shields.io/npm/v/@infrontlabs/react-spacing.svg)](https://www.npmjs.com/package/@infrontlabs/react-spacing)
 
 
-Shorthand responsive margin and padding utility component to modify an element’s appearance.
+Shorthand responsive margin and padding utility component to modify an element’s spacing.
 
 ```
 import Spacing from '@infrontlabs/react-spacing`
@@ -19,6 +19,16 @@ Change the padding or margin on any element
 import Spacing from '@infrontlabs/react-spacing`
 
 <Spacing as="h1" pb={3}>Hello</Spacing>
+```
+
+With Spacing Higher Order Component
+
+```
+import Spacing, { withSpacing } from '@infrontlabs/react-spacing`
+
+const Heading1 = withSpacing("h1")
+
+<Heading1 pb={3}>Hello</Heading1>
 ```
 
 ### Default Props

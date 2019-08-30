@@ -112,6 +112,12 @@ const Spacing = props => {
   return <Styles {...props} className={classNames} />
 }
 
+const withSpacing = Component => {
+  return props => {
+    return <Spacing as={Component} {...props} />
+  }
+}
+
 Spacing.defaultProps = {
   p: null,
   m: null,
@@ -124,5 +130,5 @@ Spacing.defaultProps = {
   mb: null,
   ml: null
 }
-
+export { withSpacing }
 export default Spacing

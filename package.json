@@ -1,7 +1,7 @@
 {
   "name": "@infrontlabs/react-spacing",
-  "version": "0.0.7",
-  "description": "Shorthand responsive margin and padding utility component to modify an element’s appearance.",
+  "version": "0.1.0",
+  "description": "Shorthand responsive margin and padding utility component to modify an element’s spacing.",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "browser": "dist/index.js",

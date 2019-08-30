@@ -1,5 +1,7 @@
 'use strict';
 
+Object.defineProperty(exports, '__esModule', { value: true });
+
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
 var React = _interopDefault(require('react'));
@@ -140,6 +142,14 @@ var Spacing = function Spacing(props) {
   }));
 };
 
+var withSpacing = function withSpacing(Component) {
+  return function (props) {
+    return React.createElement(Spacing, _extends({
+      as: Component
+    }, props));
+  };
+};
+
 Spacing.defaultProps = {
   p: null,
   m: null,
@@ -153,4 +163,5 @@ Spacing.defaultProps = {
   ml: null
 };
 
-module.exports = Spacing;
+exports.default = Spacing;
+exports.withSpacing = withSpacing;
